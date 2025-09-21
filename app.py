@@ -10,7 +10,7 @@ st.title("YOLO Image Detection App :)")
 model = YOLO("yolo11n.pt")
 # Upload image
 uploaded_image = st.file_uploader("Upload an image (jpg, png)", type=["jpg", "jpeg", "png"])
-if uploaded_image:
+if uploaded_image is not None:
     st.image(uploaded_image, caption="Uploaded Image", use_container_width=True)
 
 #Read image and convert to numpy array

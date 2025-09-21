@@ -1,8 +1,7 @@
-
- import streamlit as st
- from ultralytics import YOLO
- from PIL import Image
- import numpy as np
+import streamlit as st
+from ultralytics import YOLO
+from PIL import Image
+import numpy as np
 
  st.title("YOLO Image Detection App :)")
 

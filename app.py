@@ -15,6 +15,7 @@ uploaded_image = st.file_uploader("Upload an image (jpg, png)", type=["jpg", "jp
 if uploaded_image is not None:
 #Show original image
 st.image(uploaded_image, caption="Uploaded Image", use_container_width=True)
+
 #Read image and convert to numpy array
 image = Image.open(uploaded_image)
 image_np = np.array(image)
